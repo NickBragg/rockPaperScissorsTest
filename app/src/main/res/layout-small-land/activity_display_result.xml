@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/secondPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    tools:context="com.example.patrick.rockpaperscissors_2.DisplayResult"
+    android:background="@drawable/background2">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Computer's choice..."
+        android:id="@+id/chose"
+        android:textSize="20sp"/>
+    <ImageView
+        android:id="@+id/displayImage"
+        android:layout_width="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_height="75dp"
+        android:layout_toRightOf="@+id/chose"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/userChoice"
+        android:text="Your choice..."
+        android:textSize="20sp"
+        android:layout_below="@+id/chose"
+        android:gravity="center"/>
+    <ImageView
+        android:id="@+id/displayUserImage"
+        android:layout_marginLeft="50dp"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/displayImage"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/messageText"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_below="@+id/displayUserImage"/>
+
+</RelativeLayout>

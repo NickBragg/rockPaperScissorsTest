@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:text="Pick rock, paper, or scissors!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="60dp"
+        android:id="@+id/pick"/>
+    <ImageView
+        android:id="@+id/rock"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/rock"
+        android:layout_below="@+id/pick"
+        android:onClick="onClickRock"/>
+    <ImageView
+        android:id="@+id/paper"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_toRightOf="@+id/rock"
+        android:src="@drawable/paper"
+        android:layout_below="@id/pick"
+        android:onClick="onClickPaper"/>
+    <ImageView
+        android:id="@+id/scissors"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/scissors"
+        android:layout_toRightOf="@+id/paper"
+        android:layout_below="@+id/pick"
+        android:onClick="onClickScissors"/>
+
+</RelativeLayout>
